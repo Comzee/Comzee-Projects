@@ -1,0 +1,146 @@
+.body {
+    display: flex;
+        /* I can change this from flex to block to illustrate the difference between the two */
+    background-color: #000;
+    top:50;
+    left:50;
+    justify-content: center;
+
+    /* I used top and left 50 to position the body, such as the whole webpage was in the center */
+
+    /* Color spaces can be three or six, they are in hex, I used online color picker for most */
+    /* I used top and left to remove the white space around my black background */
+    /* by default if no display is set, it's in blocks, which is top to bottom, if I want to orientate things left to right I need to use flex */
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+/* There's three types of positional methods I used, vh/vw, px and % */
+/* vw/vw is dynamic, px is by pixel, and % is the percent off of the parent */
+}
+
+.greyheader {
+    background-color: #6c6a78;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 99%;
+    /* I used % here because it inherits from the parent div, thus giving me the small gap */
+    height: 15%;
+    top:0.5%;
+    /* border:2px solid #f00; */
+    /* I used this border "hack" to help me position all the main elements correctly */
+}
+.whitebottom {
+    display: flex;
+    justify-content: center;
+    /* flex inherits from parent, but not grandparent */
+    background-color: #fff;
+
+    position: absolute;
+    /* postional absolute is relative to the parent div, that has it's position defined */
+    /* There are five types of positons in css, static, relative, fixed, absolute, and sticky. I used absolute for most, becaue it's what made sense to me */
+    width: 95%;
+    height: 80%;
+    top:16.5%;
+    border-radius: 25px;
+    /* border:2px solid #f00; */
+    /* Many times I used vh/vw, px, and % was guess work, just trying to maske it look correct, again using the red boxes as reference */
+}
+.header1 {
+    position: absolute;
+    top:2%;
+    width:80%;
+    height:22%;
+
+
+
+    /* border:2px solid #f00; */
+    
+    /* The commented border code was to help me align the page elements correctly */
+}
+.orangeboxes {
+    position: absolute;
+    top:27%;
+    width:80%;
+    height:75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    /* used css grid generator, I couldn't figure this out on my own */
+
+    /* border:2px solid #f00; */
+    
+
+}
+
+.orangebox {
+
+    
+    background-color: #FF7400;
+    color:#fff;
+    display: block;
+    /* putting it in block here because I want top to bottom */
+    padding: 5%;
+    text-align: center;
+    font-size: 1.5vw;
+    border-radius: 25px;
+    height: 60%;
+    margin-top: 75%;
+
+
+
+    /* I used viewport here, so it dynamically changes the font size based on window size */
+
+    /* padding is for everything inside the div */
+
+    
+}
+
+.productnameheader {
+    position: relative;
+    /* width: 100%;
+    top: 0%; */
+    /* I commented out this code, didn't end up working, rather I placed it in the wrong place */
+    top:-4vh;
+    color:#000;
+    font-size: 2vw;
+    font-weight: bolder;
+
+    /* I origonaly used margin-top here, but it moved everything, so I then did top with viewport */
+
+}
+
+#buttonwrapper {
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+
+
+    /* I had to set width to 50% to cover all the buttons */
+
+}
+
+.button {
+    /* margin: 5%; */
+    width: auto;
+    padding: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    
+
+}
+
+.button:hover {
+    background-color:  #D3D3D3;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #333;
+
+    /* This is when the cursor goes over the bottons, it changes them */
+    
+}
